@@ -1,7 +1,7 @@
 /* 최소 width가 1215px이상일때 */
 .background-img-pc {
   position: absolute;
-  background-image: url(./images/bgc.png);
+  background-image: url(../images/bgc.png);
   background-repeat: no-repeat;
   background-position: left top;
   background-size: cover;
