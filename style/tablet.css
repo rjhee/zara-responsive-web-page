@@ -1,4 +1,6 @@
-.background-img {
+/* 최대 width가 1214px 이하일때 */
+
+.background-img-pc {
   display: none;
 }
 
@@ -8,6 +10,10 @@
 
 .header-cover {
   margin: 0;
+}
+
+.only-mobile {
+  display: none;
 }
 
 .nav {
@@ -58,7 +64,6 @@
   background-size: 700px;
   width: 100%;
   height: max-content;
-  z-index: -99999;
   background-attachment: fixed;
   justify-content: space-between;
 }
@@ -88,8 +93,18 @@
   text-shadow: 6px -6px #d57777;
 }
 
+.main-introducing-title:hover,
+.main-checkers-title:hover {
+  color: #fff;
+}
+
 .main-recycle {
   margin: 0;
+}
+
+.main-recycle .main-recycle-img span {
+  width: 100%;
+  height: 100vh;
 }
 
 .main-recycle .main-recycle-img h2 {
@@ -107,14 +122,13 @@
   width: 80%;
 }
 
-.bgc-cover {
+.background-img-tablet {
   position: absolute;
   background-image: url(/images/bgc.png);
   background-repeat: no-repeat;
   background-position: right top;
   background-size: 100%;
   width: 100%;
-  height: 2000px;
   z-index: -9999;
 }
 
@@ -123,9 +137,9 @@
   margin: 40px 0;
 }
 
-.collection-img {
-  width: 320px;
-  height: 320px;
+.collection-img img {
+  width: auto;
+  height: 90vh;
 }
 
 .collection-title {
@@ -135,6 +149,7 @@
 .right-btn {
   font-size: 50px;
 }
+
 .magazine {
   flex-direction: column;
   justify-content: center;
@@ -156,7 +171,12 @@
   z-index: -20;
 }
 
+/* 최대 width가 1000px 이하 일때 */
 @media screen and (max-width: 1000px) {
+  .only-mobile {
+    display: none;
+  }
+
   .main-conscious .text-cover {
     right: 10%;
   }
@@ -182,10 +202,16 @@
   }
 }
 
+/* 최대 width가 815px 이하 일때 */
 @media screen and (max-width: 815px) {
+  .only-mobile {
+    display: none;
+  }
+
   .nav {
     margin-bottom: 30px;
   }
+
   .nav-cover {
     height: fit-content;
     transform: translateY(0);
@@ -197,7 +223,8 @@
   }
 
   .main-recycle .main-recycle-img span {
-    height: 100%;
+    width: 100%;
+    height: 100vh;
   }
 
   .main-recycle .main-recycle-img h2 {
@@ -205,16 +232,42 @@
   }
   .copyright {
     max-width: 500px;
-
     text-align: center;
   }
 }
 
-@media screen and (max-width: 615px) {
+/* 최대 width가 660px 이하 일때 */
+@media screen and (max-width: 660px) {
   .only-mobile {
     display: block;
   }
   .only-pc {
     display: none;
+  }
+
+  .nav {
+    margin: 0;
+  }
+
+  .main-conscious .text-cover {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .main-conscious-img {
+    max-width: 100%;
+  }
+
+  .main-conscious-img span {
+    background-position: center center;
+  }
+
+  .main-recycle .main-recycle-img h2 {
+    font-size: 38px;
+  }
+
+  .magazine-list li {
+    font-size: 20px;
   }
 }

@@ -1,7 +1,9 @@
 $(function () {
+  // pc버전 html background-img 높이
   let allHeight = $('html').outerHeight();
-  $('.background-img').css('height', allHeight);
+  $('.background-img-pc').css('height', `${allHeight}px`);
 
+  // pc버전 매거진 리스트에 마우스 오버시 이미지 보이기
   for (let order = 0; order < 6; order++) {
     $('.magazine-list')
       .children()
@@ -26,37 +28,75 @@ $(function () {
           backgroundImage: 'none',
         });
       });
+
+    // 테블릿, 모바일 버전 매거진 리스트 클릭시 이미지 보이기
+    if (window.innerWidth < 1214) {
+      $('.magazine-list li')
+        .children()
+        .eq(order)
+        .click(function () {
+          $('.magazine > div').css(
+            'background-color',
+            'rgba(255, 255, 255, 0.475)'
+          );
+          $('.magazine-bgImg').css({
+            backgroundImage: `url(/images/magazine${order}.jpg)`,
+          });
+          $('.magazine').css('background-color', 'transparent');
+        });
+    }
   }
 
+  // 컬렉션 이미지 슬라이드
   let itemWidth = $('.collection-list li').width();
-  function product_next() {
+
+  function collectionNext() {
     $('.collection-list').animate({ left: -itemWidth }, 3000, function () {
       $('.collection-list>li').eq(0).appendTo('.collection-list');
       $('.collection-list').css('left', '0');
     });
   }
 
-  let clear1 = setInterval(product_next, 3000);
+  setInterval(collectionNext, 3000);
 
   $('.right-btn').click(function () {
-    product_next();
+    collectionNext();
     return false;
   });
 
-  // product_next();
-  // $(window).scroll(function () {
-  //   let userScroll = $(this).scrollTop();
-  //   let recycle = $('.main-recycle').offset().top;
-  //   console.log(userScroll);
-  //   if (userScroll > recycle) {
-  //     let recycleImg = $('.main-recycle-img').offset().top;
-  //     $('html').scrollTop(recycleImg);
-  //     $('.main-recycle-img').eq(0).hide();
-  //     $('.main-recycle-img').eq(1).show();
-  //   }
+  // 모바일버전 하단 background-image 높이
+  let collectionH = $('.collection').outerHeight();
+  let magazineH = $('.magazine').outerHeight();
+  let footerH = $('footer').outerHeight();
 
-  //   if (userScroll < recycle) {
-  //     $('html').scrollTop(userScroll);
-  //   }
-  // });
+  $('.background-img-tablet').css(
+    'height',
+    `${collectionH + magazineH + footerH + 300}px`
+  );
+
+  $(window).scroll(function () {
+    let recycleTop = $('.main-recycle').offset().top;
+    let userScrollTop = $(this).scrollTop();
+    console.log(recycleTop);
+    $('.main-checkers').on('mousewheel', function (e) {
+      var wheel = e.originalEvent.wheelDelta;
+
+      if (wheel > 0) {
+      } else {
+        if (
+          userScrollTop > recycleTop - 400 &&
+          userScrollTop < recycleTop - 100
+        ) {
+          $('html').scrollTop(recycleTop);
+        }
+      }
+    });
+    $('.collection').on('mousewheel', function (e) {
+      var wheel = e.originalEvent.wheelDelta;
+
+      if (wheel > 0) {
+        $('html').scrollTop(recycleTop);
+      }
+    });
+  });
 });

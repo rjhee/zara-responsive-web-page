@@ -34,6 +34,7 @@ a {
   font-weight: 300;
   text-decoration: underline;
   color: #fff;
+  padding: 0 10px;
 }
 
 .hamburger-btn {
@@ -44,8 +45,8 @@ a {
 }
 
 .hamburger-btn img {
-  width: 42px;
-  height: 42px;
+  width: 35px;
+  height: 35px;
 }
 
 .search-btn {
@@ -54,10 +55,13 @@ a {
   right: 0;
   padding: 12px;
 }
+
 .search-btn img {
   width: 30px;
   height: 30px;
+  transform: translate(5%, 5%);
 }
+
 .header-cover {
   width: 100%;
   max-width: 1440px;
@@ -119,7 +123,7 @@ a {
 }
 
 .nav-sub button:hover {
-  color: #e2e2e2;
+  color: #57837b;
 }
 
 .more-btn {
@@ -150,6 +154,86 @@ a {
   overflow: hidden;
 }
 
+.main-autumn {
+  position: relative;
+  cursor: pointer;
+}
+
+.main-autumn::after {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 15%;
+  right: 15%;
+  content: '리브드 터틀넥 드레스 ₩ 79,000';
+  padding: 1rem;
+  width: 150px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 300;
+  background-color: rgba(3, 3, 3, 0.3);
+}
+
+.main-autumn::before {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  content: '나일론 벌룬 팬츠 ₩ 29,000';
+  padding: 1rem;
+  width: 120px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 300;
+  background-color: rgba(3, 3, 3, 0.3);
+  z-index: 100;
+}
+
+.main-autumn:hover::after,
+.main-autumn:hover::before {
+  display: flex;
+}
+
+.main-autumn-img::after {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 40%;
+  left: 30%;
+  content: '폴더블 아노락 ₩ 39,000';
+  padding: 1rem;
+  width: 100px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 300;
+  background-color: rgba(3, 3, 3, 0.3);
+}
+
+.main-autumn-img::before {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 35%;
+  right: 15%;
+  content: '발수 코딩 케이프 자켓  ₩ 59,000';
+  padding: 1rem;
+  width: 150px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 300;
+  background-color: rgba(3, 3, 3, 0.3);
+}
+
+.main-autumn-img:hover::after,
+.main-autumn-img:hover::before {
+  display: flex;
+}
+
 .main-autumn-title {
   text-align: center;
   font-size: 280px;
@@ -170,6 +254,10 @@ a {
   display: flex;
 }
 
+.main-category li span {
+  transition: all 200ms ease-in;
+}
+
 .main-category li:nth-child(1) span {
   background-image: url(/images/main7.jpg);
 }
@@ -180,6 +268,18 @@ a {
 
 .main-category li:nth-child(3) span {
   background-image: url(/images/main18.jpg);
+}
+
+.main-category li:nth-child(1) span:hover {
+  background-image: url(/images/hoverimg.jpg);
+}
+
+.main-category li:nth-child(2) span:hover {
+  background-image: url(/images/hoverimg2.jpg);
+}
+
+.main-category li:nth-child(3) span:hover {
+  background-image: url(/images/hoverimg3.jpg);
 }
 
 .main-category-img {
@@ -228,6 +328,23 @@ a {
 .main-conscious-img span {
   background-image: url(/images/main15.jpg);
   background-position: center top;
+  transition: all 300ms ease-in-out;
+}
+
+.main-conscious-img span::before {
+  display: none;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(5, 5, 5, 0.5);
+}
+
+.main-conscious-img span:hover {
+  background-image: url(/images/hoverimg4.jpg);
+}
+
+.main-conscious-img span:hover::before {
+  display: block;
 }
 
 .main-introducing {
@@ -247,6 +364,15 @@ a {
   width: max-content;
   font-size: 120px;
   color: #e2e2e2;
+  transition: all 200ms ease-in;
+}
+
+.main-introducing-title:hover {
+  color: #daa520;
+}
+
+.main-introducing .text-cover .more-btn:hover {
+  color: #daa520;
 }
 
 .main-introducing-img {
@@ -282,17 +408,34 @@ a {
 .main-checkers-title {
   font-size: 150px;
   color: #e2e2e2;
+  transition: all 200ms ease-in;
+}
+.main-checkers-title:hover {
+  color: #38a3a5;
+}
+
+.main-checkers .text-cover .more-btn:hover {
+  color: #38a3a5;
 }
 
 .main-recycle {
   width: 100%;
   margin-bottom: 180px;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  -ms-overflow-style: none;
+}
+
+.main-recycle::-webkit-scrollbar {
+  display: none;
 }
 
 .main-recycle .main-recycle-img {
   position: relative;
   cursor: pointer;
   overflow: hidden;
+  scroll-snap-align: start;
 }
 
 .main-recycle .main-recycle-img::before {
@@ -379,6 +522,7 @@ a {
   justify-content: center;
   align-items: center;
   margin-bottom: 180px;
+  overflow: hidden;
 }
 
 .collections-title {
@@ -400,12 +544,11 @@ a {
   display: flex;
   width: 100%;
   position: relative;
-  overflow: hidden;
 }
 
 .collection-list li {
   position: relative;
-  margin: 0 4px;
+  margin-right: 4px;
   cursor: pointer;
 }
 
@@ -413,13 +556,19 @@ a {
   width: 460px;
   height: 460px;
   overflow: hidden;
-  margin: 4px;
 }
 
 .collection-img img {
   display: block;
   width: auto;
   height: 100%;
+  max-height: 460px;
+  margin: 0;
+  transition: 250ms;
+}
+
+.collection-img img:hover {
+  transform: scale(1.1);
 }
 
 .collection-title {
@@ -448,7 +597,7 @@ a {
 .magazine > div {
   position: relative;
   width: 100%;
-  max-width: 800px;
+  max-width: 900px;
   background-color: #fff;
 }
 
@@ -513,6 +662,8 @@ footer {
   align-items: center;
   padding-bottom: 100px;
   color: #333;
+  width: 100%;
+  height: 300px;
 }
 
 .link {

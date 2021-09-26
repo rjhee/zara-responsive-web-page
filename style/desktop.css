@@ -1,4 +1,5 @@
-.background-img {
+/* 최소 width가 1215px이상일때 */
+.background-img-pc {
   position: absolute;
   background-image: url(/images/bgc.png);
   background-repeat: no-repeat;
@@ -7,6 +8,10 @@
   width: 100%;
   z-index: -99999;
   background-attachment: fixed;
+}
+
+.background-img-tablet {
+  display: none;
 }
 
 .only-mobile {
@@ -22,7 +27,11 @@
 }
 
 .main-conscious-title {
-  font-size: 160px;
+  font-size: 180px;
+}
+
+.main-conscious-img span {
+  background-position: center center;
 }
 
 .main-introducing-title,
@@ -38,9 +47,10 @@
   font-size: 24px;
 }
 
+/*최대 width가 1216px이상 ~ 최소 width가 1749px이하일때 */
 @media screen and (max-width: 1749px) and (min-width: 1216px) {
-  .main-autumn-title {
-    font-size: 200px;
+  .main-conscious-title {
+    font-size: 140px;
   }
 
   .main-introducing-title,
@@ -56,21 +66,7 @@
     left: 5%;
   }
 
-  .magazine-title {
-    font-size: 130px;
-  }
-
-  .magazine > div li {
-    font-size: 24px;
-  }
-
   .link li {
     font-size: 32px;
-  }
-}
-
-@media screen and (max-width: 1215px) {
-  .main-conscious-title {
-    font-size: 130px;
   }
 }
