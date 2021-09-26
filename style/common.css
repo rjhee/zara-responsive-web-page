@@ -247,7 +247,7 @@ a {
 }
 
 .main-autumn-img span {
-  background-image: url(/images/main4.webp);
+  background-image: url(./images/main4.webp);
 }
 
 .main-category {
@@ -259,27 +259,27 @@ a {
 }
 
 .main-category li:nth-child(1) span {
-  background-image: url(/images/main7.jpg);
+  background-image: url(./images/main7.jpg);
 }
 
 .main-category li:nth-child(2) span {
-  background-image: url(/images/main19.jpg);
+  background-image: url(./images/main19.jpg);
 }
 
 .main-category li:nth-child(3) span {
-  background-image: url(/images/main18.jpg);
+  background-image: url(./images/main18.jpg);
 }
 
 .main-category li:nth-child(1) span:hover {
-  background-image: url(/images/hoverimg.jpg);
+  background-image: url(./images/hoverimg.jpg);
 }
 
 .main-category li:nth-child(2) span:hover {
-  background-image: url(/images/hoverimg2.jpg);
+  background-image: url(./images/hoverimg2.jpg);
 }
 
 .main-category li:nth-child(3) span:hover {
-  background-image: url(/images/hoverimg3.jpg);
+  background-image: url(./images/hoverimg3.jpg);
 }
 
 .main-category-img {
@@ -326,7 +326,7 @@ a {
 }
 
 .main-conscious-img span {
-  background-image: url(/images/main15.jpg);
+  background-image: url(./images/main15.jpg);
   background-position: center top;
   transition: all 300ms ease-in-out;
 }
@@ -340,7 +340,7 @@ a {
 }
 
 .main-conscious-img span:hover {
-  background-image: url(/images/hoverimg4.jpg);
+  background-image: url(./images/hoverimg4.jpg);
 }
 
 .main-conscious-img span:hover::before {
@@ -381,7 +381,7 @@ a {
 }
 
 .main-introducing-img span {
-  background-image: url(/images/main6.jpg);
+  background-image: url(./images/main6.jpg);
 }
 
 .main-checkers {
@@ -395,7 +395,7 @@ a {
 }
 
 .main-checkers-img span {
-  background-image: url(/images/main.jpg);
+  background-image: url(./images/main.jpg);
 }
 
 .main-checkers .text-cover {
@@ -473,21 +473,21 @@ a {
 }
 
 .main-recycle .main-recycle-img:nth-child(1) span {
-  background-image: url(/images/earth.jpg);
+  background-image: url(./images/earth.jpg);
 }
 
 .main-recycle .main-recycle-img:nth-child(2) span {
-  background-image: url(/images/earth111.jpg);
+  background-image: url(./images/earth111.jpg);
 }
 .main-recycle .main-recycle-img:nth-child(3) span {
-  background-image: url(/images/earth11.jpg);
+  background-image: url(./images/earth11.jpg);
 }
 .main-recycle .main-recycle-img:nth-child(4) span {
-  background-image: url(/images/earth6.jpg);
+  background-image: url(./images/earth6.jpg);
 }
 
 .main-recycle .main-recycle-img:nth-child(5) span {
-  background-image: url(/images/earth15.jpg);
+  background-image: url(./images/earth15.jpg);
 }
 
 .main-recycle .main-recycle-img:nth-child(1) .text-cover {
@@ -632,27 +632,27 @@ a {
 }
 
 .magazine-list li:nth-child(1)::after {
-  background-image: url(/images/main24.jpg);
+  background-image: url(./images/main24.jpg);
 }
 
 .magazine-list li:nth-child(2)::after {
-  background-image: url(/images/main14.jpg);
+  background-image: url(./images/main14.jpg);
 }
 
 .magazine-list li:nth-child(3)::after {
-  background-image: url(/images/main100.jpg);
+  background-image: url(./images/main100.jpg);
 }
 
 .magazine-list li:nth-child(3)::after {
-  background-image: url(/images/hmgoepprod.jpeg);
+  background-image: url(./images/hmgoepprod.jpeg);
 }
 
 .magazine-list li:nth-child(4)::after {
-  background-image: url(/images/Home-Furnishing.jpg);
+  background-image: url(./images/Home-Furnishing.jpg);
 }
 
 .magazine-list li:nth-child(4)::after {
-  background-image: url(/images/aaa.jpg);
+  background-image: url(./images/aaa.jpg);
 }
 
 footer {

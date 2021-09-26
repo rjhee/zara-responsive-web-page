@@ -58,7 +58,7 @@
 }
 
 .main-conscious {
-  background-image: url(/images/bgc.png);
+  background-image: url(./images/bgc.png);
   background-repeat: no-repeat;
   background-position: right top;
   background-size: 700px;
@@ -124,7 +124,7 @@
 
 .background-img-tablet {
   position: absolute;
-  background-image: url(/images/bgc.png);
+  background-image: url(./images/bgc.png);
   background-repeat: no-repeat;
   background-position: right top;
   background-size: 100%;
