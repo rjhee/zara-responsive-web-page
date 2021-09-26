@@ -14,7 +14,7 @@ $(function () {
           'rgba(255, 255, 255, 0.475)'
         );
         $('.magazine-bgImg').css({
-          backgroundImage: `url(/images/magazine${order}.jpg)`,
+          backgroundImage: `url(./images/magazine${order}.jpg)`,
         });
         $('.magazine').css('background-color', 'transparent');
       });
@@ -40,7 +40,7 @@ $(function () {
             'rgba(255, 255, 255, 0.475)'
           );
           $('.magazine-bgImg').css({
-            backgroundImage: `url(/images/magazine${order}.jpg)`,
+            backgroundImage: `url(./images/magazine${order}.jpg)`,
           });
           $('.magazine').css('background-color', 'transparent');
         });
