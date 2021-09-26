@@ -1,0 +1,76 @@
+.background-img {
+  position: absolute;
+  background-image: url(/images/bgc.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+  width: 100%;
+  z-index: -99999;
+  background-attachment: fixed;
+}
+
+.only-mobile {
+  display: none;
+}
+
+.only-pc {
+  display: flex;
+}
+
+.main-autumn-title {
+  font-size: 200px;
+}
+
+.main-conscious-title {
+  font-size: 160px;
+}
+
+.main-introducing-title,
+.main-checkers-title {
+  font-size: 90px;
+}
+
+.magazine-title {
+  font-size: 130px;
+}
+
+.magazine > div li {
+  font-size: 24px;
+}
+
+@media screen and (max-width: 1749px) and (min-width: 1216px) {
+  .main-autumn-title {
+    font-size: 200px;
+  }
+
+  .main-introducing-title,
+  .main-checkers-title {
+    font-size: 80px;
+  }
+
+  .main-checkers-img span {
+    background-position: 70%;
+  }
+
+  .main-checkers .text-cover {
+    left: 5%;
+  }
+
+  .magazine-title {
+    font-size: 130px;
+  }
+
+  .magazine > div li {
+    font-size: 24px;
+  }
+
+  .link li {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 1215px) {
+  .main-conscious-title {
+    font-size: 130px;
+  }
+}
