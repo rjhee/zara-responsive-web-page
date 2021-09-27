@@ -74,6 +74,7 @@ $(function () {
     `${collectionH + magazineH + footerH + 300}px`
   );
 
+  // recycle 스크롤top 자석처럼 붙이기
   $(window).scroll(function () {
     let recycleTop = $('.main-recycle').offset().top;
     let userScrollTop = $(this).scrollTop();
@@ -98,5 +99,9 @@ $(function () {
         $('html').scrollTop(recycleTop);
       }
     });
+  });
+
+  $('.hamburger-btn').click(function () {
+    $('.nav-cover').show();
   });
 });

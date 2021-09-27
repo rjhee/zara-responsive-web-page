@@ -124,7 +124,7 @@
 
 .background-img-tablet {
   position: absolute;
-  background-image: url(./images/bgc.png);
+  background-image: url(../images/bgc.png);
   background-repeat: no-repeat;
   background-position: right top;
   background-size: 100%;
@@ -175,6 +175,13 @@
 @media screen and (max-width: 1000px) {
   .only-mobile {
     display: none;
+  }
+
+  .nav-cover {
+    background-color: #e2e2e2;
+    z-index: 10000;
+    width: 80%;
+    height: 100vh;
   }
 
   .main-conscious .text-cover {
