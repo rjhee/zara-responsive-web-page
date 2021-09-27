@@ -102,6 +102,13 @@ $(function () {
   });
 
   $('.hamburger-btn').click(function () {
-    $('.nav-cover').show();
+    let nav = $('.nav-cover').css('display');
+    if (nav == 'none') {
+      $('.nav-cover').slideDown().css('display', 'flex');
+    }
+  });
+
+  $('.close-btn').click(function () {
+    $('.nav-cover').slideUp();
   });
 });
