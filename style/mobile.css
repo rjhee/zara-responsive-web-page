@@ -125,6 +125,7 @@
   .main-recycle-img,
   .collection {
     height: 100vh;
+    width: 100%;
   }
 
   .collection-list li {

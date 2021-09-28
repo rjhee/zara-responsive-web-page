@@ -173,13 +173,24 @@
 
 /* 최대 width가 1000px 이하 일때 */
 @media screen and (max-width: 1000px) {
+  .text-cover {
+    margin: 0;
+  }
+
   .only-mobile {
     display: none;
   }
 
   .main-conscious .text-cover {
     right: 10%;
+    width: 100%;
+    margin: 0rem;
   }
+
+  .main-conscious-title {
+    margin: auto;
+  }
+
   .main-introducing .text-cover {
     left: 0;
     transform: translateX(0%);
@@ -209,13 +220,13 @@
   }
 
   .nav {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 
   .nav-cover {
     height: fit-content;
     transform: translateY(0);
-    top: 85%;
+    top: 100%;
   }
 
   .main-conscious .text-cover {
@@ -322,6 +333,9 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  .main-conscious-title {
   }
 
   .main-conscious-img {

@@ -103,12 +103,21 @@ $(function () {
 
   $('.hamburger-btn').click(function () {
     let nav = $('.nav-cover').css('display');
+
     if (nav == 'none') {
-      $('.nav-cover').slideDown().css('display', 'flex');
+      $('.nav-cover').css('display', 'flex');
     }
   });
 
   $('.close-btn').click(function () {
-    $('.nav-cover').slideUp();
+    $('.nav-cover').css('display', 'none');
   });
+});
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 660) {
+    $('.nav-cover').css('display', 'flex');
+  } else {
+    $('.nav-cover').css('display', 'none');
+  }
 });
