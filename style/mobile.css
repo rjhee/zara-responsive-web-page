@@ -1,5 +1,6 @@
 /* 최대 width가 480px 이하 일때 */
 .logo {
+  padding: 1rem 0;
   font-size: 40px;
   text-shadow: 3px -5px #daa520, 6px -10px #d57777;
 }
@@ -62,19 +63,14 @@
   color: #d56767;
 }
 
-.main-recycle .main-recycle-img h2 {
-  color: #e2e2e2;
-  text-shadow: 4px -4px #717976;
-  font-size: 30px;
-}
-
-.main-recycle .main-recycle-img:nth-child(1) .text-cover,
-.main-recycle .main-recycle-img:nth-child(2) .text-cover,
-.main-recycle .main-recycle-img:nth-child(3) .text-cover,
-.main-recycle .main-recycle-img:nth-child(4) .text-cover,
-.main-recycle .main-recycle-img:nth-child(5) .text-cover {
+.main-recycle .text-cover {
+  width: 90%;
   top: 10%;
   left: 10%;
+}
+
+.main-recycle .main-recycle-img h2 {
+  color: #e2e2e2;
 }
 
 .background-img-tablet {

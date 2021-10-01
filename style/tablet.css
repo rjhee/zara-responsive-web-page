@@ -21,7 +21,7 @@
 }
 
 .logo {
-  padding: 0 2rem;
+  padding: 1rem 2rem 0.5rem 2rem;
   font-size: 70px;
   text-shadow: 8px -6px #daa520, 18px -12px #d57777;
 }
@@ -35,7 +35,7 @@
 
 .main-img {
   width: 100%;
-  height: 500px;
+  height: 600px;
 }
 
 .main-autumn {
@@ -53,6 +53,10 @@
   text-shadow: 10px -10px #f9e4c9;
 }
 
+.main-category li {
+  margin-bottom: 0;
+}
+
 .main-category li:last-child {
   display: none;
 }
@@ -66,6 +70,7 @@
   height: max-content;
   background-attachment: fixed;
   justify-content: space-between;
+  padding: 1rem;
 }
 
 .main-conscious .text-cover {
@@ -87,6 +92,10 @@
   max-width: 430px;
 }
 
+.main-introducing {
+  margin-top: 0;
+}
+
 .main-introducing-title,
 .main-checkers-title {
   font-size: 70px;
@@ -102,14 +111,17 @@
   margin: 0;
 }
 
-.main-recycle .main-recycle-img span {
+.main-recycle .main-recycle-img {
   width: 100%;
   height: 100vh;
 }
 
+.main-recycle .main-recycle-img:first-child h2 {
+  font-size: 50px;
+}
+
 .main-recycle .main-recycle-img h2 {
-  text-shadow: 6px -6px #717976;
-  font-size: 60px;
+  font-size: 30px;
 }
 
 .main-recycle .main-recycle-img:nth-child(1) .text-cover,
@@ -117,9 +129,8 @@
 .main-recycle .main-recycle-img:nth-child(3) .text-cover,
 .main-recycle .main-recycle-img:nth-child(4) .text-cover,
 .main-recycle .main-recycle-img:nth-child(5) .text-cover {
-  bottom: 5%;
+  bottom: 10%;
   left: 5%;
-  width: 80%;
 }
 
 .background-img-tablet {
@@ -192,13 +203,15 @@
   }
 
   .main-introducing .text-cover {
-    left: 0;
-    transform: translateX(0%);
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
     text-align: center;
   }
 
   .main-introducing-title {
     width: 100%;
+    font-size: 50px;
   }
 
   .main-checkers .text-cover {
@@ -210,6 +223,18 @@
 
   .main-checkers-img span {
     background-position: 80%;
+  }
+
+  .main-recycle .text-cover {
+    width: 90%;
+  }
+
+  .main-recycle .main-recycle-img:first-child .text-cover {
+    width: fit-content;
+  }
+
+  .main-recycle .main-recycle-img h2 {
+    font-size: 28px;
   }
 }
 
@@ -238,9 +263,6 @@
     height: 100vh;
   }
 
-  .main-recycle .main-recycle-img h2 {
-    font-size: 48px;
-  }
   .copyright {
     max-width: 500px;
     text-align: center;
@@ -249,6 +271,10 @@
 
 /* 최대 width가 660px 이하 일때 */
 @media screen and (max-width: 660px) {
+  .logo {
+    font-size: 40px;
+  }
+
   .only-mobile {
     display: block;
   }
@@ -329,13 +355,15 @@
     padding: 0.4rem 1rem;
   }
 
+  .main-introducing .main-img,
+  .main-checkers .main-img {
+    height: 100vh;
+  }
+
   .main-conscious .text-cover {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-  }
-
-  .main-conscious-title {
   }
 
   .main-conscious-img {
@@ -346,8 +374,12 @@
     background-position: center center;
   }
 
+  .main-recycle .main-recycle-img:first-child h2 {
+    font-size: 40px;
+  }
+
   .main-recycle .main-recycle-img h2 {
-    font-size: 38px;
+    font-size: 24px;
   }
 
   .magazine-list li {
