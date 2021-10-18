@@ -565,18 +565,18 @@ a {
 }
 
 .main-recycle .main-recycle-img:first-child .text-cover {
-  background-color: #3f6a6a8f;
+  background-color: rgba(63, 106, 106, 0.533);
   padding: 1rem 3rem;
 }
 
 .main-recycle .main-recycle-img:nth-child(2) .text-cover,
 .main-recycle .main-recycle-img:nth-child(4) .text-cover,
 .main-recycle .main-recycle-img:nth-child(5) .text-cover {
-  background-color: #7179769d;
+  background-color: rgba(113, 121, 118, 0.616);
 }
 
 .main-recycle .main-recycle-img:nth-child(3) .text-cover {
-  background-color: #e2e2e266;
+  background-color: rgba(226, 226, 226, 0.4);
 }
 
 .main-recycle .main-recycle-img span {
