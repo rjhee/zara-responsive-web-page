@@ -20,16 +20,6 @@ class="link"
 </dd>
 <hr>
 <dt>
-<h3>사용한 기술</h3>
-</dt>
-<dd>
-  <span class="html-icon skill-icon"></span>
-  <span class="css-icon skill-icon"></span>
-  <span class="js-icon skill-icon"></span>
-  <span class="jquery-icon skill-icon"></span>
-</dd>
-<hr>
-<dt>
  <h3> 기능</h3>
 </dt>
 <dd>- 슬라이드 배너</dd>
